@@ -1,109 +1,70 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Your Name | Portfolio</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f4f4f4;
-      color: #222;
-    }
-    header {
-      background: #222;
-      color: #fff;
-      padding: 2rem 0;
-      text-align: center;
-    }
-    nav a {
-      color: #fff;
-      margin: 0 1rem;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    .container {
-      max-width: 900px;
-      margin: 2rem auto;
-      background: #fff;
-      padding: 2rem;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-    }
-    h2 {
-      color: #444;
-      border-bottom: 2px solid #eee;
-      padding-bottom: 0.5rem;
-    }
-    .projects {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1.5rem;
-    }
-    .project {
-      background: #fafafa;
-      padding: 1rem;
-      border-radius: 6px;
-      box-shadow: 0 1px 4px rgba(0,0,0,0.03);
-    }
-    .contact a {
-      color: #222;
-      text-decoration: underline;
-    }
-    footer {
-      text-align: center;
-      padding: 1rem 0;
-      background: #222;
-      color: #fff;
-      margin-top: 2rem;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>Your Name</h1>
-    <p>Web Developer | Designer | [Your Profession]</p>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
-  <div class="container">
-    <section id="about">
-      <h2>About Me</h2>
-      <p>
-        Hi! I'm [Your Name], a passionate web developer with experience in building modern, responsive websites and web applications. I love turning ideas into reality using code.
-      </p>
-    </section>
-    <section id="projects">
-      <h2>Projects</h2>
-      <div class="projects">
-        <div class="project">
-          <h3>Project One</h3>
-          <p>Short description of your project. What does it do? What tech did you use?</p>
-          <a href="https://github.com/yourusername/project1" target="_blank">View on GitHub</a>
+import React from "react";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import { Github, Linkedin, Mail } from "lucide-react";
+
+export default function Portfolio() {
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-slate-100 to-white p-6">
+      <header className="text-center py-10">
+        <h1 className="text-4xl font-bold text-gray-800">Aditi Sharma</h1>
+        <p className="text-gray-600 mt-2">Data Analyst | Designer | Builder</p>
+        <div className="flex justify-center mt-4 gap-4">
+          <a href="https://github.com/aditi" target="_blank">
+            <Github className="w-5 h-5" />
+          </a>
+          <a href="https://linkedin.com/in/aditi" target="_blank">
+            <Linkedin className="w-5 h-5" />
+          </a>
+          <a href="mailto:aditi@email.com">
+            <Mail className="w-5 h-5" />
+          </a>
         </div>
-        <div class="project">
-          <h3>Project Two</h3>
-          <p>Short description of your project. What does it do? What tech did you use?</p>
-          <a href="https://github.com/yourusername/project2" target="_blank">View on GitHub</a>
-        </div>
-        <!-- Add more projects as needed -->
-      </div>
-    </section>
-    <section id="contact" class="contact">
-      <h2>Contact</h2>
-      <p>
-        Email: <a href="mailto:your.email@example.com">your.email@example.com</a><br>
-        LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">yourprofile</a>
-      </p>
-    </section>
-  </div>
-  <footer>
-    &copy; 2024 Your Name. All rights reserved.
-  </footer>
-</body>
-</html>
+      </header>
+
+      <section className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto mt-10">
+        <Card>
+          <CardContent className="p-6">
+            <h2 className="text-xl font-semibold text-gray-800">About Me</h2>
+            <p className="mt-2 text-gray-600">
+              I'm a creative and analytical thinker with a passion for building meaningful tools and solving real-world problems with data and design.
+            </p>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardContent className="p-6">
+            <h2 className="text-xl font-semibold text-gray-800">Skills</h2>
+            <ul className="list-disc list-inside text-gray-600 mt-2">
+              <li>Python, R, SQL</li>
+              <li>Excel, Tableau, PowerBI</li>
+              <li>Figma, Adobe XD</li>
+              <li>React, TailwindCSS</li>
+            </ul>
+          </CardContent>
+        </Card>
+
+        <Card className="md:col-span-2">
+          <CardContent className="p-6">
+            <h2 className="text-xl font-semibold text-gray-800">Projects</h2>
+            <ul className="mt-2 space-y-3">
+              <li>
+                <strong>Air Quality Dashboard</strong> – Built an interactive dashboard using Tableau to track seasonal air pollution trends.
+              </li>
+              <li>
+                <strong>Me Time Curtain</strong> – Designed and prototyped a motorized curtain system integrated with Siri voice commands.
+              </li>
+              <li>
+                <strong>Spidify Drone</strong> – Created a miniature spider-like drone for mobile-based photography.
+              </li>
+            </ul>
+          </CardContent>
+        </Card>
+      </section>
+
+      <footer className="text-center text-gray-500 mt-20 text-sm">
+        © 2025 Aditi Sharma. All rights reserved.
+      </footer>
+    </div>
+  );
+}
