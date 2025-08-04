@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #e0f7fa, #fff);
+}
+
+.portfolio-container {
+  padding: 2rem;
+  perspective: 1000px;
+}
+
+.portfolio-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.portfolio-name {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #374151;
+}
+
+.portfolio-title {
+  color: #6b7280;
+  margin-top: 0.5rem;
+}
+
+.portfolio-socials a {
+  margin: 0 0.5rem;
+  color: #4b5563;
+  transition: transform 0.3s ease;
+}
+
+.portfolio-socials a:hover {
+  transform: scale(1.2);
+  color: #0ea5e9;
+}
+
+.portfolio-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.portfolio-card {
+  background: white;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.portfolio-3d:hover {
+  transform: rotateY(5deg) scale(1.03);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.project-card {
+  width: 640px;
+}
+
+.portfolio-footer {
+  margin-top: 5rem;
+  text-align: center;
+  color: #9ca3af;
+}
