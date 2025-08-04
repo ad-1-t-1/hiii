@@ -1,57 +1,142 @@
- import React from "react";
-import { Github, Linkedin, Mail } from "lucide-react";
-import "./portfolio.css";
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Aditi Sharma Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-export default function Portfolio() {
-  return (
-    <div className="portfolio-container">
-      <header className="portfolio-header">
-        <h1 className="portfolio-name">Aditi Sharma</h1>
-        <p className="portfolio-title">Data Analyst | Designer | Builder</p>
-        <div className="portfolio-socials">
-          <a href="https://github.com/aditi" target="_blank">
-            <Github />
-          </a>
-          <a href="https://linkedin.com/in/aditi" target="_blank">
-            <Linkedin />
-          </a>
-          <a href="mailto:aditi@email.com">
-            <Mail />
-          </a>
-        </div>
-      </header>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #e0f7fa, #ffffff);
+      padding: 2rem;
+      color: #333;
+    }
 
-      <section className="portfolio-section">
-        <div className="portfolio-card portfolio-3d">
-          <h2>About Me</h2>
-          <p>
-            I'm a creative and analytical thinker with a passion for building meaningful tools and solving real-world problems with data and design.
-          </p>
-        </div>
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      perspective: 1000px;
+    }
 
-        <div className="portfolio-card portfolio-3d">
-          <h2>Skills</h2>
-          <ul>
-            <li>Python, R, SQL</li>
-            <li>Excel, Tableau, PowerBI</li>
-            <li>Figma, Adobe XD</li>
-            <li>React, TailwindCSS</li>
-          </ul>
-        </div>
+    header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
 
-        <div className="portfolio-card portfolio-3d project-card">
-          <h2>Projects</h2>
-          <ul>
-            <li><strong>Air Quality Dashboard</strong> – Built an interactive dashboard using Tableau to track seasonal air pollution trends.</li>
-            <li><strong>Me Time Curtain</strong> – Designed and prototyped a motorized curtain system integrated with Siri voice commands.</li>
-            <li><strong>Spidify Drone</strong> – Created a miniature spider-like drone for mobile-based photography.</li>
-          </ul>
-        </div>
-      </section>
+    h1 {
+      font-size: 3rem;
+      font-weight: bold;
+      color: #374151;
+    }
 
-      <footer className="portfolio-footer">
-        © 2025 Aditi Sharma. All rights reserved.
-      </footer>
-    </div>
-  );
-}
+    p.subtitle {
+      color: #6b7280;
+      margin-top: 0.5rem;
+    }
+
+    .socials {
+      margin-top: 1rem;
+    }
+
+    .socials a {
+      margin: 0 0.5rem;
+      font-size: 1.5rem;
+      text-decoration: none;
+      color: #4b5563;
+      transition: transform 0.3s ease;
+    }
+
+    .socials a:hover {
+      transform: scale(1.2);
+      color: #0ea5e9;
+    }
+
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+    }
+
+    .card {
+      background: white;
+      border-radius: 1rem;
+      padding: 2rem;
+      width: 300px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    .card:hover {
+      transform: rotateY(5deg) scale(1.03);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    }
+
+    .card h2 {
+      margin-bottom: 1rem;
+    }
+
+    .projects {
+      width: 100%;
+    }
+
+    footer {
+      margin-top: 5rem;
+      text-align: center;
+      color: #9ca3af;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Aditi Sharma</h1>
+      <p class="subtitle">Data Analyst | Designer | Builder</p>
+      <div class="socials">
+        <a href="https://github.com/aditi" target="_blank">🐙</a>
+        <a href="https://linkedin.com/in/aditi" target="_blank">🔗</a>
+        <a href="mailto:aditi@email.com">✉️</a>
+      </div>
+    </header>
+
+    <section class="cards">
+      <div class="card">
+        <h2>About Me</h2>
+        <p>
+          I'm a creative and analytical thinker with a passion for building meaningful tools and solving real-world problems with data and design.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>Skills</h2>
+        <ul>
+          <li>Python, R, SQL</li>
+          <li>Excel, Tableau, PowerBI</li>
+          <li>Figma, Adobe XD</li>
+          <li>React, TailwindCSS</li>
+        </ul>
+      </div>
+
+      <div class="card projects">
+        <h2>Projects</h2>
+        <ul>
+          <li><strong>Air Quality Dashboard</strong> – Built an interactive dashboard using Tableau to track seasonal air pollution trends.</li>
+          <li><strong>Me Time Curtain</strong> – Designed and prototyped a motorized curtain system integrated with Siri voice commands.</li>
+          <li><strong>Spidify Drone</strong> – Created a miniature spider-like drone for mobile-based photography.</li>
+        </ul>
+      </div>
+    </section>
+
+    <footer>
+      © 2025 Aditi Sharma. All rights reserved.
+    </footer>
+  </div>
+</body>
+</html>
