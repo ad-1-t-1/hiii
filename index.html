@@ -1,68 +1,55 @@
-import React from "react";
-import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
+ import React from "react";
 import { Github, Linkedin, Mail } from "lucide-react";
+import "./portfolio.css";
 
 export default function Portfolio() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-100 to-white p-6">
-      <header className="text-center py-10">
-        <h1 className="text-4xl font-bold text-gray-800">Aditi Sharma</h1>
-        <p className="text-gray-600 mt-2">Data Analyst | Designer | Builder</p>
-        <div className="flex justify-center mt-4 gap-4">
+    <div className="portfolio-container">
+      <header className="portfolio-header">
+        <h1 className="portfolio-name">Aditi Sharma</h1>
+        <p className="portfolio-title">Data Analyst | Designer | Builder</p>
+        <div className="portfolio-socials">
           <a href="https://github.com/aditi" target="_blank">
-            <Github className="w-5 h-5" />
+            <Github />
           </a>
           <a href="https://linkedin.com/in/aditi" target="_blank">
-            <Linkedin className="w-5 h-5" />
+            <Linkedin />
           </a>
           <a href="mailto:aditi@email.com">
-            <Mail className="w-5 h-5" />
+            <Mail />
           </a>
         </div>
       </header>
 
-      <section className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto mt-10">
-        <Card>
-          <CardContent className="p-6">
-            <h2 className="text-xl font-semibold text-gray-800">About Me</h2>
-            <p className="mt-2 text-gray-600">
-              I'm a creative and analytical thinker with a passion for building meaningful tools and solving real-world problems with data and design.
-            </p>
-          </CardContent>
-        </Card>
+      <section className="portfolio-section">
+        <div className="portfolio-card portfolio-3d">
+          <h2>About Me</h2>
+          <p>
+            I'm a creative and analytical thinker with a passion for building meaningful tools and solving real-world problems with data and design.
+          </p>
+        </div>
 
-        <Card>
-          <CardContent className="p-6">
-            <h2 className="text-xl font-semibold text-gray-800">Skills</h2>
-            <ul className="list-disc list-inside text-gray-600 mt-2">
-              <li>Python, R, SQL</li>
-              <li>Excel, Tableau, PowerBI</li>
-              <li>Figma, Adobe XD</li>
-              <li>React, TailwindCSS</li>
-            </ul>
-          </CardContent>
-        </Card>
+        <div className="portfolio-card portfolio-3d">
+          <h2>Skills</h2>
+          <ul>
+            <li>Python, R, SQL</li>
+            <li>Excel, Tableau, PowerBI</li>
+            <li>Figma, Adobe XD</li>
+            <li>React, TailwindCSS</li>
+          </ul>
+        </div>
 
-        <Card className="md:col-span-2">
-          <CardContent className="p-6">
-            <h2 className="text-xl font-semibold text-gray-800">Projects</h2>
-            <ul className="mt-2 space-y-3">
-              <li>
-                <strong>Air Quality Dashboard</strong> – Built an interactive dashboard using Tableau to track seasonal air pollution trends.
-              </li>
-              <li>
-                <strong>Me Time Curtain</strong> – Designed and prototyped a motorized curtain system integrated with Siri voice commands.
-              </li>
-              <li>
-                <strong>Spidify Drone</strong> – Created a miniature spider-like drone for mobile-based photography.
-              </li>
-            </ul>
-          </CardContent>
-        </Card>
+        <div className="portfolio-card portfolio-3d project-card">
+          <h2>Projects</h2>
+          <ul>
+            <li><strong>Air Quality Dashboard</strong> – Built an interactive dashboard using Tableau to track seasonal air pollution trends.</li>
+            <li><strong>Me Time Curtain</strong> – Designed and prototyped a motorized curtain system integrated with Siri voice commands.</li>
+            <li><strong>Spidify Drone</strong> – Created a miniature spider-like drone for mobile-based photography.</li>
+          </ul>
+        </div>
       </section>
 
-      <footer className="text-center text-gray-500 mt-20 text-sm">
+      <footer className="portfolio-footer">
         © 2025 Aditi Sharma. All rights reserved.
       </footer>
     </div>
