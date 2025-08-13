@@ -1,142 +1,283 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Aditi Sharma Portfolio</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(135deg, #e0f7fa, #ffffff);
-      padding: 2rem;
-      color: #333;
-    }
-
-    .container {
-      max-width: 1000px;
-      margin: 0 auto;
-      perspective: 1000px;
-    }
-
-    header {
-      text-align: center;
-      margin-bottom: 3rem;
-    }
-
-    h1 {
-      font-size: 3rem;
-      font-weight: bold;
-      color: #374151;
-    }
-
-    p.subtitle {
-      color: #6b7280;
-      margin-top: 0.5rem;
-    }
-
-    .socials {
-      margin-top: 1rem;
-    }
-
-    .socials a {
-      margin: 0 0.5rem;
-      font-size: 1.5rem;
-      text-decoration: none;
-      color: #4b5563;
-      transition: transform 0.3s ease;
-    }
-
-    .socials a:hover {
-      transform: scale(1.2);
-      color: #0ea5e9;
-    }
-
-    .cards {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 2rem;
-      justify-content: center;
-    }
-
-    .card {
-      background: white;
-      border-radius: 1rem;
-      padding: 2rem;
-      width: 300px;
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-      transition: transform 0.4s ease, box-shadow 0.4s ease;
-    }
-
-    .card:hover {
-      transform: rotateY(5deg) scale(1.03);
-      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
-    }
-
-    .card h2 {
-      margin-bottom: 1rem;
-    }
-
-    .projects {
-      width: 100%;
-    }
-
-    footer {
-      margin-top: 5rem;
-      text-align: center;
-      color: #9ca3af;
-      font-size: 0.9rem;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Aspiring Professional | Intern Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-  <div class="container">
-    <header>
-      <h1>Aditi Sharma</h1>
-      <p class="subtitle">Data Analyst | Designer | Builder</p>
-      <div class="socials">
-        <a href="https://github.com/aditi" target="_blank">🐙</a>
-        <a href="https://linkedin.com/in/aditi" target="_blank">🔗</a>
-        <a href="mailto:aditi@email.com">✉️</a>
-      </div>
-    </header>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Your Name</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
 
-    <section class="cards">
-      <div class="card">
-        <h2>About Me</h2>
-        <p>
-          I'm a creative and analytical thinker with a passion for building meaningful tools and solving real-world problems with data and design.
-        </p>
-      </div>
-
-      <div class="card">
-        <h2>Skills</h2>
-        <ul>
-          <li>Python, R, SQL</li>
-          <li>Excel, Tableau, PowerBI</li>
-          <li>Figma, Adobe XD</li>
-          <li>React, TailwindCSS</li>
-        </ul>
-      </div>
-
-      <div class="card projects">
-        <h2>Projects</h2>
-        <ul>
-          <li><strong>Air Quality Dashboard</strong> – Built an interactive dashboard using Tableau to track seasonal air pollution trends.</li>
-          <li><strong>Me Time Curtain</strong> – Designed and prototyped a motorized curtain system integrated with Siri voice commands.</li>
-          <li><strong>Spidify Drone</strong> – Created a miniature spider-like drone for mobile-based photography.</li>
-        </ul>
-      </div>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Hi, I'm <span class="highlight">Your Name</span></h1>
+                <p class="hero-subtitle">Aspiring [Your Field] Professional | Eager to Learn & Contribute</p>
+                <p class="hero-description">
+                    Passionate about [your field] with a strong foundation in [key skills]. 
+                    Ready to bring fresh perspectives and dedication to your team.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="profile-placeholder">
+                    <i class="fas fa-user"></i>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <footer>
-      © 2025 Aditi Sharma. All rights reserved.
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Why Hire Me?</h3>
+                    <p>
+                        I'm a [your year] student at [Your University] studying [Your Major]. 
+                        While I may be early in my career, I bring:
+                    </p>
+                    <ul class="about-list">
+                        <li><i class="fas fa-check"></i> <strong>Fresh Perspective:</strong> New ideas and innovative approaches</li>
+                        <li><i class="fas fa-check"></i> <strong>Eagerness to Learn:</strong> Quick learner with strong academic foundation</li>
+                        <li><i class="fas fa-check"></i> <strong>Adaptability:</strong> Comfortable with new technologies and methodologies</li>
+                        <li><i class="fas fa-check"></i> <strong>Team Player:</strong> Collaborative mindset and strong communication skills</li>
+                        <li><i class="fas fa-check"></i> <strong>Cost-Effective:</strong> High value for investment in training and development</li>
+                    </ul>
+                </div>
+                <div class="about-stats">
+                    <div class="stat">
+                        <h3>3.8</h3>
+                        <p>GPA</p>
+                    </div>
+                    <div class="stat">
+                        <h3>5+</h3>
+                        <p>Projects</p>
+                    </div>
+                    <div class="stat">
+                        <h3>2+</h3>
+                        <p>Years Study</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Competencies</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3><i class="fas fa-code"></i> Technical Skills</h3>
+                    <div class="skill-items">
+                        <span class="skill-tag">HTML/CSS</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">React</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-users"></i> Soft Skills</h3>
+                    <div class="skill-items">
+                        <span class="skill-tag">Problem Solving</span>
+                        <span class="skill-tag">Communication</span>
+                        <span class="skill-tag">Teamwork</span>
+                        <span class="skill-tag">Time Management</span>
+                        <span class="skill-tag">Adaptability</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-tools"></i> Tools & Platforms</h3>
+                    <div class="skill-items">
+                        <span class="skill-tag">VS Code</span>
+                        <span class="skill-tag">GitHub</span>
+                        <span class="skill-tag">Figma</span>
+                        <span class="skill-tag">Slack</span>
+                        <span class="skill-tag">Notion</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Projects & Achievements</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Personal Portfolio Website</h3>
+                        <p>Built a responsive portfolio website using HTML, CSS, and JavaScript. Demonstrates my ability to create clean, user-friendly interfaces.</p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <a href="#" class="project-link">View Project <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-calculator"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Calculator App</h3>
+                        <p>Developed a functional calculator with a modern UI. Shows my problem-solving skills and attention to detail.</p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>CSS</span>
+                        </div>
+                        <a href="#" class="project-link">View Project <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-tasks"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Todo List Application</h3>
+                        <p>Created a task management app with local storage. Demonstrates my understanding of data persistence and user experience.</p>
+                        <div class="project-tech">
+                            <span>JavaScript</span>
+                            <span>HTML</span>
+                            <span>CSS</span>
+                        </div>
+                        <a href="#" class="project-link">View Project <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Hire Me Section -->
+    <section class="why-hire">
+        <div class="container">
+            <h2 class="section-title">Why Choose Me?</h2>
+            <div class="reasons-grid">
+                <div class="reason-card">
+                    <i class="fas fa-rocket"></i>
+                    <h3>Fast Learner</h3>
+                    <p>I quickly adapt to new technologies and methodologies, ensuring minimal onboarding time.</p>
+                </div>
+                <div class="reason-card">
+                    <i class="fas fa-lightbulb"></i>
+                    <h3>Fresh Ideas</h3>
+                    <p>Bring new perspectives and innovative solutions that can help improve existing processes.</p>
+                </div>
+                <div class="reason-card">
+                    <i class="fas fa-heart"></i>
+                    <h3>Passionate</h3>
+                    <p>Genuinely excited about [your field] and eager to contribute to meaningful projects.</p>
+                </div>
+                <div class="reason-card">
+                    <i class="fas fa-clock"></i>
+                    <h3>Flexible</h3>
+                    <p>Available for various schedules and willing to work on different types of projects.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Let's Connect!</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Ready to discuss opportunities</h3>
+                    <p>I'm excited to learn about potential internship opportunities and how I can contribute to your team.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>your.email@example.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+1 (555) 123-4567</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Your City, State</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Your Name</h3>
+                    <p>Aspiring professional ready to make an impact.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Your Name. All rights reserved.</p>
+            </div>
+        </div>
     </footer>
-  </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
